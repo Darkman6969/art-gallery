@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Art Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            /* Center the background image */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .artwork {
+            background-color: white;
+            border-radius: 10px;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .artwork img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AFRIVIBE GALLERY</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="about.html">About Us</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Welcome to the AFRIVIBE GALLERY</h2>
+            <p>Explore our collection of artworks from around the Africa. </p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="artwork">
+                <img src="assets/artwork_1.jpg" alt="Artwork 1">
+                <h3>Mystic Sahara Canvas</h3>
+                <p>Artist: Nia Jelani </p>
+
+                <p>Description: A symbolic tapestry representing the struggle for liberation and freedom, woven with
+                    powerful images and symbols of resilience.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_2.jpg" alt="Artwork 1">
+                <h3>Liberation Tapestry
+                </h3>
+                <p>Artist: Nia Jelani </p>
+
+                <p>Description: A symbolic tapestry representing the struggle for liberation and freedom, woven with
+                    powerful images and symbols of resilience.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_3.jpg" alt="Artwork 1">
+                <h3>Serengeti Harmony</h3>
+                <p>Artist: Amina Nkosi </p>
+
+                <p>Description: A vibrant canvas capturing the interconnected rhythms of the Serengeti, blending
+                    wildlife and landscapes into a harmonious masterpiece.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_4.jpg" alt="Artwork 1">
+                <h3>Nubian Dreamscape</h3>
+                <p>Artist: Kwame Ansah </p>
+
+                <p>Description: An ethereal painting that transports viewers to a dreamscape inspired by Nubian culture,
+                    featuring intricate patterns and mystical symbolism.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_5.jpg" alt="Artwork 1">
+                <h3>Sankofa Whispers</h3>
+                <p>Artist: Zainab Ibrahim </p>
+
+                <p>Description:A thought-provoking piece echoing the wisdom of Sankofa, symbolizing the importance of
+                    learning from the past and embracing one's roots.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_6.jpg" alt="Artwork 1">
+                <h3>Ubuntu Elevation
+                </h3>
+                <p>Artist: Raphael Ifeanyi </p>
+
+                <p>Description: A striking sculpture embodying the spirit of Ubuntu, showcasing interconnected figures
+                    uplifting one another, representing shared humanity.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_7.jpg" alt="Artwork 1">
+                <h3>Kilimanjaro Reverie</h3>
+                <p>Artist:Leyla Aboud</p>
+
+                <p>Description: A captivating depiction of Kilimanjaro's majestic presence, infused with dreamlike
+                    elements that evoke a sense of awe and wonder.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_8.jpg" alt="Artwork 1">
+                <h3>Afrocentric Rhythms</h3>
+                <p>Artist: Maliha Ahmed </p>
+
+                <p>Description: A dynamic and colorful composition celebrating the diverse rhythms of African cultures,
+                    expressed through vibrant patterns and symbols.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_9.jpg" alt="Artwork 1">
+                <h3>Saharan Mirage</h3>
+                <p>Artist: Lamine Diop </p>
+
+                <p>Description: An evocative portrayal of the mysterious beauty of the Sahara Desert, capturing the
+                    interplay of light and shadow on the shifting sands.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_10.jpg" alt="Artwork 1">
+                <h3>Zambezi Reflections</h3>
+                <p>Artist: Yaa Amponsah </p>
+
+                <p>Description: A serene and reflective piece inspired by the Zambezi River, featuring gentle currents
+                    and the rich flora and fauna of the region.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_11.jpg" alt="Artwork 1">
+                <h3>Maasai Mosaic</h3>
+                <p>Artist:Mwamba Chansa </p>
+
+                <p>Description: A striking mosaic art piece inspired by Maasai beadwork, blending traditional patterns
+                    with modern design to create a visually compelling artwork.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_12.jpg" alt="Artwork 1">
+                <h3>Soulful Baobab</h3>
+                <p>Artist: Aïssa Maïga </p>
+
+                <p>Description: An emotional and soul-stirring depiction of a Baobab tree, symbolizing strength,
+                    resilience, and the enduring spirit of African landscapes.</p>
+            </div>
+            <div class="artwork">
+                <img src="assets/artwork_13.jpg" alt="Artwork 1">
+                <h3>Kente Kaleidoscope</h3>
+                <p>Artist: Abimbola Adeoti </p>
+
+                <p>Description: A kaleidoscopic tapestry of color and pattern inspired by the rich heritage of Kente
+                    cloth, weaving together cultural motifs into a vibrant whole.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Virtual Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

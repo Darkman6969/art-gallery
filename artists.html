@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists | AFRIVIBE GALLERY</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/artists2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #artists {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .team-member {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="assets/artists_logo.png" alt="African Logo"
+            style="width: 100px; height: auto; border-radius: 50%; margin-right: 10px;">
+        <h1 style="color: #fff;">AFRIVIBE GALLERY</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="about.html">About Us</a></li>
+
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="artists">
+            <h2>Featured Artists</h2>
+
+            <!-- Artist 1 -->
+            <div class="team-member">
+                <img src="assets/artist1.jpg" alt="Artist 1">
+                <h3>Nia Jelani</h3>
+                <p>Nia Jelani is a Nigerian artist known for her vibrant and abstract depictions of traditional Nigerian
+                    folklore. Her use of bold colors and intricate patterns reflects the richness of her cultural
+                    heritage.</p>
+                <button onclick="viewPaintings('artist_1')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist2.jpg" alt="Artist 2">
+                <h3>Thabo Mbeki </h3>
+                <p>Thabo Mbeki is a South African artist whose work often explores the complexities of post-apartheid
+                    society. His realistic portrayals capture the resilience and diversity of the South African people.
+                </p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist3.jpg" alt="Artist 2">
+                <h3>Amina Nkosi </h3>
+                <p>Amina Nkosi, a Kenyan artist, is celebrated for her mixed-media pieces that blend traditional Maasai
+                    beadwork with contemporary art. Her work is a fusion of cultural heritage and modern expression.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist4.jpg" alt="Artist 2">
+                <h3>Kwame Ansah </h3>
+                <p>Kwame Ansah from Ghana is known for his evocative portraits that depict the daily life of the
+                    Ghanaian people. His use of light and shadow adds depth to his emotionally charged pieces.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist5.jpg" alt="Artist 2">
+                <h3>Zainab Ibrahim </h3>
+                <p>Zainab Ibrahim is a Senegalese artist whose art reflects the vibrant energy of Dakar. Her paintings
+                    often depict scenes from bustling markets and traditional ceremonies, capturing the essence of
+                    Senegalese life.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/rtist6.jpg" alt="Artist 2">
+                <h3>Raphael Ifeanyi </h3>
+                <p>Raphael Ifeanyi, a Cameroonian artist, specializes in surrealistic landscapes that blend the natural
+                    beauty of Cameroon with dreamlike elements. His work often carries environmental messages.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist7.jpg" alt="Artist 2">
+                <h3>Leyla Aboud </h3>
+                <p>Leyla Aboud, a Tanzanian artist, is known for her intricate and detailed henna-inspired paintings.
+                    Her art is a celebration of Tanzanian culture and traditions</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist8.jpg" alt="Artist 2">
+                <h3>Maliha Ahmed </h3>
+                <p>Maliha Ahmed, a Moroccan artist, draws inspiration from the rich history of Morocco. Her paintings
+                    often feature intricate geometric patterns and vibrant colors reminiscent of Moroccan tiles.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist9.jpg" alt="Artist 2">
+                <h3>Lamine Diop </h3>
+                <p>Lamine Diop is a Malian artist who explores the intersection of tradition and modernity in his work.
+                    His paintings often depict the dynamic cultural landscape of Mali.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist10.jpg" alt="Artist 2">
+                <h3>Yaa Amponsah </h3>
+                <p>Yaa Amponsah is a Ghanaian artist celebrated for her Afrofuturistic paintings that reimagine
+                    traditional Ghanaian symbols in futuristic settings. Her work explores the potential for cultural
+                    evolution.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist11.jpg" alt="Artist 2">
+                <h3>Mwamba Chansa</h3>
+                <p>Mwamba Chansa, a Zambian artist, is known for his expressive portraits that capture the resilience
+                    and strength of the Zambian people. His use of bold colors and brushstrokes conveys powerful
+                    emotions.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist12.jpg" alt="Artist 2">
+                <h3>Aïssa Maïga</h3>
+                <p> Aïssa Maïga is a Mauritanian artist who uses her paintings to explore the nomadic way of life in the
+                    Sahara Desert. Her art often reflects the beauty and challenges faced by the people of Mauritania.
+                </p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+            <div class="team-member">
+                <img src="assets/artist13.jpg" alt="Artist 2">
+                <h3>Abimbola Adeoti</h3>
+                <p>Abimbola Adeoti, a Nigerian artist, creates vibrant cityscapes that depict the bustling streets of
+                    Lagos. Her paintings celebrate the energy and diversity of urban Nigerian life.</p>
+                <button onclick="viewPaintings('artist_2')">View Paintings</button>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Similar footer as in the index.html file -->
+    </footer>
+
+    <!-- JavaScript for handling the button click and navigation to exclusive paintings page -->
+    <script>
+        function viewPaintings(artistId) {
+            // You can use artistId to identify the specific artist
+            // Redirect to the exclusive paintings page for the selected artist
+            window.location.href = 'shopping.html?artist=' + artistId;
+        }
+    </script>
+</body>
+
+</html>
